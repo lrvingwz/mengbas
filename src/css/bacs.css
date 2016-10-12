@@ -1,0 +1,87 @@
+/*--------------官网首页头部-------------*/
+									/*--头部上--*/
+/*头部上，一*/
+.Moonbasa_header{margin: 0 auto; width: 1332px; position: relative;}
+.Moonbasa_page{width: 1332px;height: 26px; background: #F6F6F6;border-bottom: 1px solid #EDEDED;}
+.Moonbasa_box{width: 1200px; margin: 0 auto;}
+.Moonbasa_boxleft{width: 301px;  float: left;}
+.Moonbasa_boxleft_span{text-indent: 18px; display: inline-block;}
+.Moonbasa_boxright{width: auto;height: 26px; position: relative; float: right; padding-right:0 ;}
+.Moonbasa_boxright ul li{float: left;width: 60px;text-align: center;}
+.Moonbasa_boxright ul li a{padding-right: 9px;}
+/*头部上，二*/
+.Moonbasa_header_img{width: 1332px;}
+.Moonbasa_header_imgdiv{width:1200px;overflow: hidden; margin: 0 auto;}
+.Moonbasa_header_imgdiv li{float:left;width: 133px; height: 42px; }
+.li1 a{background: url(../img/160918195442_01.jpg);width: 133px; height: 42px;display: inline-block;}
+.li2 a{background: url(../img/160918195442_02.jpg);width: 133px; height: 42px;display: inline-block;}
+.li3 a{background: url(../img/160918195442_03.jpg);width: 133px; height: 42px;display: inline-block;}
+.li4 a{background: url(../img/160918195442_04.jpg);width: 133px; height: 42px;display: inline-block;}
+.li5 a{background: url(../img/160918195442_05.jpg);width: 133px; height: 42px;display: inline-block;}
+.li6 a{background: url(../img/160918195442_06.jpg);width: 133px; height: 42px;display: inline-block;}
+.li7 a{background: url(../img/160918195442_07.jpg);width: 133px; height: 42px;display: inline-block;}
+.li8 a{background: url(../img/160918195442_08.jpg);width: 133px; height: 42px;display: inline-block;}
+.li9 a{background: url(../img/160918195442_09.jpg);width: 133px; height: 42px;display: inline-block;}
+/*头部上，三*/
+.header{width:1332px;}
+.header_box{width:1200px;margin: 0 auto;padding: 16px 0; overflow: hidden;}
+.header_box_logo{width: 320px;  float: left;}
+.header_box_logo1{float: left; width: 540px;  margin-top: 14px;}
+.header_box_logo2{float: right; padding-right: 10px;}
+.header_input{width: 540px;}
+.header_input>span .input-1 {float: left; border:2px solid #e50163;width: 445px;/*height: 33px;*/padding-left: 5px;line-height: 30px;margin: 2px 2px 0 0;color: #b9b9b9;text-indent: 7px;}
+.header_input>span .input-2 {
+	float: left;
+	width: 83px;
+	height: 34px;
+	margin-top: 2px;
+	margin-left: -2px;
+	 border: none;
+	 color: oldlace; 
+	 font-size: 18px;
+	 background: #e50163;
+	 
+	  }
+.header_box_p>span p{float: left; cursor: pointer;}
+.header_box_p>span p:hover{color: #e50163;}
+
+									/*头部下*/
+.navigation{width:1332px;height: 36px; background: #414141; position: relative;}
+.navigation_1{width: 1200px; margin: 0 auto;}
+.navigation_left{width: 702px;  display: inline-block;}
+.navigation_left>ul li{float: left; width: 42px;  margin-right: 32px;}
+.navigation_left>ul li a{color: #fff;text-decoration: none; border-bottom: 2px solid transparent;font-family: 微软雅黑;font-size: 14px;line-height: 34px;}
+.navigation_left>ul li a:hover{color: #e50163;}
+.navigation_right{width: 258px; float: right;}
+.navigation_right a{margin-left: 30px; width: 56px;font-weight: bold;line-height: 34px;}
+
+
+
+
+
+/*------------------尾部--------------*/
+.tai{width: 1332px; }
+.tail_1first{width: 1332px; background: #ECECEC;}
+.tail{width: 1200px;padding-bottom: 50px;margin: 0 auto; }
+.tail_1{width: 1200px; margin: 0 auto; height: 130px;background: #ECECEC;padding: 5px 0 10px 0;}
+.tail_1 ul{padding-right: 52px;padding-top: 0; float: left;padding-bottom: 0;padding-left: 42px;}
+.lititle a{font-weight: 700; color: black;}
+
+.tail_2{width: 840px; height: 39px; margin: 15px auto 0; }
+.tail_2 img{float: left;padding: 0 16px;border-right: 1px solid #d9d9d9;}
+
+.tail_3{ margin-top: 40px;color: #797979;padding-bottom: 20px;text-align: center;width: 100%;display: inline-block;}
+.tail_3flist{width: 1200px;margin: auto;position: relative;} 
+.tail_3flist a{white-space: nowrap;}
+
+.tail_4{width: 760px; margin: 0 auto; overflow: hidden;}
+.tail_4 img{float: left;width: 86px;height: 33px; border: 0;}
+
+/* --------------友情提示----------------*/
+.Friendship{
+	border-bottom: 1px dashed rgb(205, 205, 205);
+	border-top: 1px dashed rgb(205, 205, 205);
+	height: 28px;
+	width: 980px;
+	margin: 10px auto;
+}

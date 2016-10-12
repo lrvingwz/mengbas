@@ -1,0 +1,31 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,img,legend,button,input,textarea,th,td {
+	margin:0;
+	padding:0;
+}
+
+html,body{height: 100%; width: 1332px;}
+body {
+	color:#555;
+	font-size:12px;
+	font-family:"宋体";
+	line-height:22px;
+	background:#FFFFFF;
+}
+.clear {
+	clear:both;
+}
+img {
+	border:0;
+}
+a {
+	color:#797979;
+	text-decoration:none;
+	font-size:12px;
+}
+a:hover {
+	color:#e50056;
+}
+ul,li {
+	list-style-type:none;
+}

@@ -1,0 +1,93 @@
+
+/*-----------------轮播图部分---------------------*/
+/*轮播图大图*/
+.Shuffling{width: 1332px; height:430px;margin: 0 auto; overflow: hidden;position:relative; display: block;}
+.Shuffling_list li{position: absolute;left: 0; top: 0;}
+.Shuffling_list li a img{width: 1332px; /*height:430px;*/}
+/*轮播图小图标*/
+.Shuffling_div{width: 80px; height: 10px;position: absolute;right: 80px; bottom: 20px;}
+.Shuffling_div_span{width: 10px; height: 10px;border-radius:50%;background: black;display:inline-block;}
+/*---------侧栏-------------*/
+.cide{width: 200px; z-index: 1;position: absolute;top: 220px;left: 66px;}
+.cide_Navigation{width: 208px; background: white;}
+.cide_Navigation >ul >li{border-bottom: 1px solid #DEDEDE;  }
+.cide_Navigation ul{width: 208px;}
+.cide_div,.cide_div1,.cide_div2,.cide_div3,.cide_div4{width: 80%;margin:0 auto ; padding-top: 30px; overflow: hidden;background-position: 135px; }
+.cide_div{background:url(../img/icon_1.png) no-repeat;background-position: 135px;}
+.cide_div1{background:url(../img/icon_2.png) no-repeat;background-position: 135px;}
+.cide_div2{background:url(../img/icon_3.png) no-repeat;background-position: 135px;}
+.cide_div3{background:url(../img/icon_4.png) no-repeat;background-position: 135px;}
+.cide_div4{background:url(../img/icon_5.png) no-repeat;background-position: 134px;}
+.cide_div h3 a,.cide_div1 h3 a,.cide_div2 h3 a,.cide_div3 h3 a,.cide_div4 h3 a{font-size:20px ; font-weight: 900;color: black; }
+.cide_div h4 a,.cide_div1 h4 a,.cide_div2 h4 a,.cide_div3 h4 a,.cide_div4 h4 a{float: left; font-weight: 300; margin: 5px 10px 5px 0;}
+/*侧栏隐藏部分*/
+
+.hide{ position: absolute;left: 270px; top: px; z-index: 2;}
+.hidel1{width: 260px; height: 420px; background: white; border: 1px solid #DEDEDE;display:none;}
+.ohidel1{width: 260px; height: 420px; background: white; border: 1px solid #DEDEDE;display:block;}
+.hidel2{width: 260px; height: 400px; background: white; border: 1px solid #DEDEDE; display: none;}
+.hidel3{width: 260px; height: 400px; background: white; border: 1px solid #DEDEDE;display: none;}
+.hidel4{width: 260px; height: 400px; background: white;border: 1px solid #DEDEDE; display: none;}
+
+/*隐藏的小ul-hidel1*/
+.hideUl{width: 90%; margin: 0 auto;}
+.hideUl >li{margin-bottom: 5px;}
+.hideLi{border: none;}
+.hideLi_h4 {overflow: hidden;border: none;}
+.hideLi_h4 a{float: left; margin: 0 10px; font-weight: 300; }
+.hideLi_h4 a:hover{text-decoration: underline;}
+/*隐藏的小ul-hidel2*/
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------网页品牌部分----------------*/
+.bodys_brands{width: 1322px; background: #E4E4E4;}
+.brands{width: 1332px;  background: #e4e4e4;height: 306px;overflow: hidden;}
+.brands_1{width: 1200px; margin: 0 auto; }
+.brands_btn{width: 1332px; padding-left: 220px; }
+.brands_btn span{
+	width: 108px;
+ 	margin: 10px 0;
+  	height: 26px; 
+  	display: inline-block; 
+  	background: oldlace;
+  	text-align: center;
+  	line-height: 26px;
+	}
+.brands_left {float: left; width: 18%;}
+.brands_right{float: left; width: 82%; }
+.brands_right_picture{position: relative;}
+.brands_right_picture .brands_right_picture_li1{opacity: 1;}
+.brands_right_picture li{position: absolute; left: 0; top: 0;opacity: 0;}
+/*---------------免海淘美国馆--------------------*/
+.america{width: 1332px;}
+.america_first{width: 1200px; margin: 0 auto;}
+
+/*------------每周新品轮播图----------*/
+.product{width: 1332px; position: relative; margin-bottom: 50px;}
+.product_1{width: 1220px; margin: 0 auto;}
+.product_carousel{width: 1220px; height: 444px;overflow: hidden; margin: 0 auto; }
+.product_carousel ul {position: relative;width: 1220px; height: 444px;}
+.product_carousel ul li{position: absolute;}
+.product_carousel .mayul .product_first_li{opacity: 1; }
+.product_btn{position: relative;}
+.product_smallbtn{position: absolute;right: 175px; bottom: 40px;}
+.product_smallbtn span{width: 15px;border-radius:50%; height: 15px;float: left;background: #c6c6c6;margin-left: 10px;}
+.product_smallbtn .smallbtn_span1{ background: darkred;}
+/*-----------热销单款推荐---------------*/
+.hot{width: 1332px; position: relative; margin-bottom: 50px;}
+.hotherd{width: 1220px; margin: 0 auto;}
+.hots{width: 1220px; margin: 0 auto; height: 819px;}
+/*.hotul{width: 1220px; height: 819px; position: relative;}
+.hotli{width: 1220px; height: 819px; position: absolute; top: 0; left: 0;}*/
+/*小图标SPAN*/
+/*.hot_div{width: 100px; height: 10px;position: absolute;right: 50%; top: 500px;}
+.hot_span{width: 15px; height: 15px;border-radius:50%;background: #C7C7C7;display:inline-block;}*/

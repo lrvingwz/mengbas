@@ -1,0 +1,206 @@
+.xzoom{position:relative; margin: 27px 0 0 50px;}
+.xzoom .xzoom-min{position:absolute;top:0;left:0;width:100px;height:50px;border:1px solid #fc0;background-color:rgba(255,255,0,0.3)}
+
+.xzoom-big{position:absolute;width:200px;height:200px;overflow:hidden;}
+.xzoom-big img{position:absolute;left:0;top:0; width: 500px;}
+
+
+
+
+
+
+
+
+
+
+
+/*黎寅华 15:59:09
+onload=function(){
+		        //获取到元素节点
+				var oform = document.getElementsByTagName("form")[1];
+				var ophone = oform.getElementsByTagName("input");
+				var opassword = document.getElementById("password");
+				var oqr = document.getElementById("queren");
+				var op = document.getElementById("entry_t");
+				var obtn1 =document.getElementById("btn2");
+				var flag1 = flag2 = false;
+				
+				var oldphone = getCookie("enter_phone"); 
+	    		 var oldpass= getCookie("enter_pass");
+	    		 
+	    		 if(oldphone){
+	    		 	oInput[0].value=oldphone;
+	    		 	oInput[1].value=oldpass;	
+	    		 }
+				
+				ophone[0].onblur=function(){
+					var value = this.value;
+					var Reg1 = /^[1-3]\d{10}$/; //手机号
+					var Reg2 = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;//邮箱
+					
+					 
+					var flag = Reg1.test(value) || Reg2.test(value);
+					if(value ==""){
+						op.innerHTML = "请输入您的手机号或常用邮箱。";
+						flag1 = false;
+						return;
+					}
+					if(!flag){
+                    	op.innerHTML = "请输入正确的邮箱或手机号。";
+                    	flag1 = false;
+					}else{
+						op.innerHTML = "";
+						flag1 =true;
+					}
+				}
+				//密码验证
+				ophone[1].onblur=function(){
+					var value = this.value; //获取文本框内容
+					var reg = /^\w{6,16}$/; //正则表达式
+			        
+			        if(value ==""){
+						op.innerHTML = "请输入您的请重新输入一次上面的密码。";
+						flag2 = false;
+						return;
+					}
+					var flag = reg.test(value);
+                    if(!flag){
+                    	op.innerHTML = "用户密码长度范围在6~16位之间.";
+                    	flag2 = false;
+                    }else{
+                    	op.innerHTML ="";
+                    	flag2 = true;
+                    }
+				}
+	           
+	            
+	            //开始登录
+	            obtn1.onclick=function(){
+	            	
+	            	var get_phone = getCookie("phone");
+	            	var get_password = getCookie("password1");
+	            	
+	            	if(flag1&&flag2){
+	            		
+	            		var phone = ophone[0].value;
+		            	var password1 = ophone[1].value;
+	            	    
+	            	    if(get_phone == phone && get_password == password1){
+	            	    	return true;
+	            	    }else{
+	            	    	alert("此账号未注册");
+	            	    	return false;
+	            	    	
+	            	    }
+		    			if(ophone[2].checked){
+		    				
+		    				var d = new Date();
+		    				d.setDate(d.getDate()+10);
+		    				setCookies("enter_phone",phone,d);
+		    				setCookies("enter_pass",password1,d);
+		    			}
+		            }else{
+			            		op.innerHTML = "请完善信息";
+			            		return false;
+			            }
+				            	
+		        }
+	  
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*onload=function(){
+		        //获取到元素节点
+				var oform = document.getElementsByTagName("form")[1];
+				var ophone = oform.getElementsByTagName("input");
+				var opassword = document.getElementById("password");
+				var oqr = document.getElementById("queren");
+				var op = document.getElementById("register_t");
+				var obtn =document.getElementById("btn1");
+				var obtn1 =document.getElementById("btn2");
+                
+				var flag1 = flag2=flag3 = false;
+				ophone[0].onblur=function(){
+					var value = this.value;
+					var Reg1 = /^[1-3]\d{10}$/; //手机号
+					var Reg2 = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;//邮箱
+
+					
+					var flag = Reg1.test(value) || Reg2.test(value);
+					if(value ==""){
+						op.innerHTML = "请输入您的手机号或常用邮箱。";
+						flag1 = false;
+						return;
+					}
+					if(!flag){
+                    	op.innerHTML = "请输入正确的邮箱或手机号。";
+                    	flag1 = false;
+					}else{
+						op.innerHTML = "";
+						flag1 =true;
+					}
+				}
+				//密码验证
+				ophone[1].onblur=function(){
+					var value = this.value; //获取文本框内容
+					var reg = /^\w{6,16}$/; //正则表达式
+			        
+			        if(value ==""){
+						op.innerHTML = "请输入您的请重新输入一次上面的密码。";
+						flag2 = false;
+						return;
+					}
+					var flag = reg.test(value);
+                    if(!flag){
+                    	op.innerHTML = "用户密码长度范围在6~16位之间.";
+                    	flag2 = false;
+                    }else{
+                    	op.innerHTML ="";
+                    	flag2 = true;
+                    }
+				}
+	            //确认密码验证
+	            ophone[2].onblur=function(){
+					var value1 = ophone[1].value;
+					var value2 = this.value;
+			
+                    if(value1 !== value2){
+                    	op.innerHTML = "您两次输入的密码不一致。";
+                    	flag3 = false;
+                    }else{
+                    	flag3 = true;
+                    }
+				}
+	            
+	            //开始注册
+	            obtn.onclick=function(){
+	            	if(flag1&&flag2&&flag3){
+	            		var phone = ophone[0].value;
+		            	var password1 = ophone[1].value;
+	            	
+	            	    var d = new Date();
+	    				d.setDate(d.getDate()+10);
+	    				setCookies("phone",phone,d);
+	    				setCookies("password1",password1,d);
+	    				
+	    				alert("恭喜你！注册成功。");
+	    				
+	            	}else{
+	            		op.innerHTML = "请完善信息";
+	            		return false;
+	            	}
+		            	
+	            }
+	            
+	            
+}*/

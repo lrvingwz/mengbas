@@ -1,0 +1,135 @@
+/*头部*/
+body{background: #CECCCF;}
+.registration1{width: 1016px; margin: 0 auto;}
+.registration1 a p{
+	
+}
+/*注册页面*/
+.registration2{
+	margin: 0 auto;
+	width: 1016px;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+    padding-bottom: 6px;
+    margin-bottom: 50px;
+    margin-top: -10px;
+	}
+	/*左面*/
+.registration2_left{
+	width: 505px;
+    height: auto;
+    float: left;
+    overflow: hidden;}
+.registration2_left img{margin: 23px 18px 20px 84px;}
+/*右边*/
+.registration_right{
+	width: 400px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 16px;
+}
+.registration_right1 a{
+	color: #9f9f9f;
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.registration_right2{
+	padding: 27px 0 0 34px;
+    border: 1px solid #dcdcdc;
+    width: 364px;
+    position: relative;
+}
+.registration_right2 form{width: 364px;}
+.input_1,.input_2,.input_3,.input_4{
+	width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.input_1 input,.input_2 input,.input_3 input,.input_4 input{
+	width: 322px;
+    height: 40px;
+    border: #c9c9c9 1px solid;
+    padding-left: 0;
+    line-height: 40px;
+    position: absolute;
+    left: 2px;
+    z-index: 0;
+    border-radius: 4px;
+}
+.input_1 div,.input_2 div,.input_3 div,.input_4 div{
+	padding-left: 20px;
+    position: absolute;
+    top: 40px;
+}
+.div_span{
+	width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.div_span div{padding-left: 20px;position: absolute;top: 44px;}
+.div_span a{position: relative;left: 5px;}
+.div_btn{
+	width: 365px;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    overflow: auto;
+}
+.div_btn input{
+	width: 324px;
+    height: 43px;
+    color: #fff;
+    border: 0;
+    font: 15px/43px '微软雅黑';
+    text-align: center;
+    cursor: pointer;
+    background: #e30165;
+    display: block;
+    line-height: 40px;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+.div_check{
+	width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.div_btn div{padding-left: 20px;position: absolute;top: 44px;}
+.div_check span{
+	color: #e30164;
+    cursor: pointer;
+}
+.tail_3{width: 1016px; margin: 0 auto;  position: relative; text-align: center;}
+.div_spanbtn{width: 80px; height: 20px; float: left; margin-right: 60px;}
+.div_span span{
+	display: inline-block; 
+	width:70px; 
+	float:left;
+	height:21px;
+	border:none;
+	background:white;
+	font-size:20px;
+	text-align:center;
+	line-height:21px;
+    color:#00f;
+    
+    }

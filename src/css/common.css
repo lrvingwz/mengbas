@@ -1,0 +1,31 @@
+
+/*轮播图公共类*/
+.active{background: oldlace;}
+.brands_btn .active1{background: black; color: oldlace;}
+.product_aactive{background: black;}
+.a1{background: url(../css/img/img/165.png);}
+
+.hidel1_hd{display: block;}
+.hidel1_hd1{display:none;}
+
+/*我的购物车类*/
+.maygoing_li{width: 90%;margin-left: 160px; clear: both;}
+.maygoing_bting{float: left; margin:15px 20px 0 0;}
+.maygoing_img{width: 30px; height: 40px; float: left; margin-right: 15px;}
+.maygoing_span2{color: #9D9D9D;}
+.li_ul{clear: both; width: 1080px;}
+.li_li,.li_li1,.li_li2,.li_li3,.li_li4{float: left;}
+.li_li{width: 480px; height: 44px;}
+.li_li1{margin-left: 120px;}
+.li_li2{margin-left: 60px;overflow: hidden;}
+.li_li3{margin-left: 60px;}
+.li_li4{margin-left: 60px;}
+.li_li2sp1{ float: left;cursor: pointer;  border: 1px solid rosybrown; text-align: center; width: 20px; line-height: 16px;}
+.li_li2bt{ float: left;  width: 30px; text-align: center; border: none; border-top: 1px solid rosybrown;border-bottom: 1px solid rosybrown;}
+.li_li2sp2{ float: left;cursor: pointer;  border: 1px solid rosybrown;  text-align: center; width: 20px; line-height: 16px;}
+.li_li3sp{color: #E50065;}
+.li_li4sp2{color: #A6A6A6;}
+.li_li4sp1,.li_li4sp2{float: left; cursor: pointer;}
+/*我的购物车结算类*/
+.clearing{color: #E50065;}
+.total{color: #E50065; font-size:20px;}
