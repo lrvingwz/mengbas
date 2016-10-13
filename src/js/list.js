@@ -1,6 +1,7 @@
 
 jQuery(function(){
-	
+	//数据请求
+		var index =0;
 	//点击隐藏显示
 	var $select_dd = $(".select_dd");
 	var $classBox = $select_dd.find("a:gt(9)");//前十个设计师
@@ -31,6 +32,7 @@ jQuery(function(){
 		
 		
 		//数据请求
+		var index =0;
 		var $ax = $(".ax");
 		jQuery.ajaxSetup({
 			type:"get",
@@ -75,13 +77,20 @@ jQuery(function(){
 			// 懒加载效果
 			// 给window绑定scroll事件，当差不多滚动到底部是加载更多内容
 			$(window).on('scroll',function(){
-				// 获取滚动条滚动过的距离
-				var scrollTop = $(window).scrollTop();
-
-				// 当差不多滚动到底部是加载更多内容
-				if(scrollTop >= $(document).height() - $(window).height() - 100){
-					$.ajax();
-				}
+				
+					// 获取滚动条滚动过的距离
+					var scrollTop = $(window).scrollTop();
+	
+					// 当差不多滚动到底部是加载更多内容
+					if(scrollTop >= $(document).height() - $(window).height() - 100){
+						index+=1;
+						if (index>=5) {
+							return ;
+						}
+						$.ajax();
+						
+					}
+				
 			})
 			
 			

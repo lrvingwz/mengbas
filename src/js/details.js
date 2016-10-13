@@ -1,19 +1,40 @@
 jQuery(function(){
 	
-	//鼠标移入导航栏
+/*-----------鼠标移入导航栏-------------*/
 	var $dhl_mv = $(".dhl_mv");
 	$dhl_mv.on("mouseenter","a",function(){
 		$(this).css({"color":"#000","border-bottom":"3px solid black "}).siblings("a").css({"color":"#484946","border-bottom":"3px solid #fff"})
 	})
 	
-	//放大镜
+/*--------放大镜-------*/
 	var $box = $(".boxs");
 	$box.xzoom({
 		position:"right",
 	});
 	
-	
 			
+/*----------点击商品数量加减事件-------------*/
+	var i = 0;	
+	var $quantity1;
+	var $i2 = $(".i2");
+	var $i0 = $(".i0");
+		$i2.on("click",function(){
+			i++;
+		$quantity1=$quantity.html(i);
+		console.log(parseInt($quantity1))
+			
+		})
+		$i0.on("click",function(){
+			if (i>=1) {
+				i--;
+				if (i==0) {
+				i=0;
+				}
+			$quantity1=$quantity.html(i);
+			}
+		})
+			
+
 
 			
 /*--------购物车---------------*/
@@ -26,29 +47,44 @@ jQuery(function(){
 	var $quantity=$("#quantity");	//数量	
 	var	$img=$(".box1");			//图片
 	var $bt2 = $(".bt2");			//添加购物车按钮
-	var $quantity1 = parseInt($("#quantity").html());//获取商品数量的初始值
+	//var $quantity1 = parseInt($("#quantity").html());//获取商品数量的初始值
+	
 	$bt2.on("click",function(){
-			$quantity1 +=1;
+			$quantity1++;
 		if (getCookie("mytrade")) {
 			mytrade = JSON.parse(getCookie("mytrade"));
 			var obj={"trade":$trade.html(),"price":$price.html(),"quantity":$quantity.html(),"img":$img.attr("src")}
 			mytrade.push(obj);
 			mytrade = JSON.stringify(mytrade);
-			console.log("set")
 		}else{
 			var mytrade=[];
 			var obj={"trade":$trade.html(),"price":$price.html(),"quantity":$quantity.html(),"img":$img.attr("src")}
 			mytrade.push(obj);
 			mytrade = JSON.stringify(mytrade);
-			console.log("no-set")
 		}
-		
 		
 		var d = new Date("2016-10-20")
 		addCookie("count",$quantity1,d);
 		addCookie("mytrade",mytrade,d);
 		alert("添加成功")
 	})
+		
+		
+		
+	/*-------商品尺码鼠标点击切换事件---------*/
+	 var $tix_ul =$(".tix_ul");
+	 $tix_ul.on("click","li",function(){
+	 	$(this).css({"border":"1px solid #E50065","color":"#E50065"}).siblings("li").css({"border":"1px solid #6A6A6A","color":"#6A6A6A"});
+	 })
+		
+
+		
+		
+	/*-------商品详情鼠标点击切换事件---------*/
+	 var $rht_dh =$(".rht_dhul");
+	 $rht_dh.on("click","li",function(){
+	 	$(this).css({"background":"#FFFEFF","border-top":"3px solid red"}).siblings("li").css({"background":"#E8E8E8","border-top":"3px solid #E8E8E8"});
+	 })
 		
 })
 

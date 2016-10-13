@@ -253,7 +253,8 @@
 }
 .tit1 .a1{width: 20px; height: 44px; background: black;}
 .tix{line-height: 30px; float: left; margin-right: 10px;}
-.tix1{width: 30px; height: 30px; margin: 0 3px ; border: 1px solid #E50065; float: left; text-align: center; line-height: 30px; font-size: 16px;}
+.cotxt{border: 1px solid #E50065; color: #E50065; width: 30px;font-weight: 800; height: 30px; margin: 0 3px ;  float: left; text-align: center; line-height: 30px; font-size: 16px;}
+.tix1{width: 30px; height: 30px; margin: 0 3px ; font-weight: 800; border: 1px solid #6A6A6A; float: left; text-align: center; line-height: 30px; font-size: 16px;}
 
 .tic{line-height: 40px; float: left; margin-right: 10px;}
 .tic1 p{width: 60px; height: 40px; border: 1px solid #E50065; float: left; font-size: 18px;}
@@ -306,8 +307,9 @@
 
 /*右侧展图*/
 .rht{width: 82%; float: left; margin-left: 34px; background: #FFFFFF;}
-.rht_dh{width: 100%; background: #E8E8E8; overflow: hidden; }
-.rht_dh li{width:150px ; height: 45px; float: left; text-align: center; line-height: 45px; border-top: 3px solid red;}
+.rht_dh{width: 100%; background: #E8E8E8; overflow: hidden; cursor: pointer;}
+.rht_dh li{width:150px ; height: 45px; float: left; text-align: center; line-height: 45px;}
+.rht_dhli{ border-top: 3px solid red;background:#FFFFFF;}
 /*右侧表格*/
 .tab{width: 100%; }
 .tab h2{margin: 30px 0 0 20px;}

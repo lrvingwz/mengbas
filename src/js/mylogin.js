@@ -12,6 +12,8 @@ jQuery(function(){
 	var cook = getCookie("mytrade");
 		cook = JSON.parse(cook);
 	var countcook = getCookie("count");  //从cookie中获取商品数量
+		countcook = JSON.parse(countcook);
+		countcook = parseInt(countcook);
 	var $maygoing_li = $(".maygoing_li");//获取我的ul
 	var $ul = $("<ul/>").addClass("li_ul");//创建ul标签
 	var clearing = $(".go3right").find("p"); //获取结算总数量和总价的标签
@@ -26,7 +28,7 @@ jQuery(function(){
 		trades = ele.trade //信息
 		prices = ele.price;  //单价
 		quantitys=ele.quantity //数量
-		total_prices = parseInt( ele.price)*parseInt( countcook); //总价
+		total_prices = parseInt( ele.price)*(countcook-1); //总价
 //		var $ul = $("<ul/>").addClass("li_ul");//创建ul标签
 //		//第一个li,单选按钮，商品信息
 
@@ -77,7 +79,7 @@ jQuery(function(){
 			//第三个li，数量
 		var $li3 = $("<li/>").addClass("li_li2"); 
 		var $span4 = $("<span/>").addClass("li_li2sp1").html("-").appendTo($li3);
-		var $ibt1 = $("<input/>").addClass("li_li2bt").val(countcook).appendTo($li3);
+		var $ibt1 = $("<input/>").addClass("li_li2bt").val(countcook-1).appendTo($li3);
 		var $span5 = $("<span/>").addClass("li_li2sp2").html("+").appendTo($li3);
 		
 			//第四个li，总价
@@ -97,7 +99,7 @@ jQuery(function(){
 		$ul.appendTo($maygoing_li);//把ul添加到页面的li上去
 	
 			//创建商品数量总计和金额总计标签
-		var $span9 = $("<span/>").addClass("clearing").html(parseInt( countcook)+"件").appendTo(clearing);
+		var $span9 = $("<span/>").addClass("clearing").html(parseInt( countcook-1)+"件").appendTo(clearing);
 		var $trong = $("<strong/>").html("折后商品金额总计:").appendTo(clearing);
 		var $span10 = $("<span/>").addClass("total").html("￥"+total_prices+".00").appendTo(clearing);
 		
