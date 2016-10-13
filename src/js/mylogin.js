@@ -70,7 +70,7 @@ jQuery(function(){
 		var $ibt = $("<input/>").attr("type","checkbox").addClass("maygoing_bting").appendTo($li1);
 		var $img = $("<img/>").attr("src",$img1).addClass("maygoing_img").appendTo($li1);
 		var $span = $("<span/>").addClass("maygoing_span1").html(trades+"<br/>").appendTo($li1);
-		var $span1 = $("<span/>").html("品牌：韩伊儿 尺寸：L 颜色：宝蓝").addClass("maygoing_span2").appendTo($li1);
+		var $span1 = $("<span/>").html("品牌：韩伊儿 尺寸：S 颜色：橙色").addClass("maygoing_span2").appendTo($li1);
 		
 			//第二个li，单价
 		var $li2 = $("<li/>").addClass("li_li1"); 

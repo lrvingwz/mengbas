@@ -12,16 +12,52 @@ jQuery(function(){
 		position:"right",
 	});
 	
+	
+/*--------商品小图鼠标移入事件-----------*/
+	var $minUl = $("#minUl");	//小ul
+	var $positul = $("#positul").find("li");  //大ul的li
+	$minUl.on("mouseenter","li",function(){
+		minli=$(this).index();
+		console.log(minli)
+		$(this).css("border","1px solid red").siblings().css("border","1px solid #ffffff")
+		$positul.eq(minli-1).css("display","block").siblings().css("display","none")
+})
+	
+//	$positul.on("mouseenter",function(){
+//		
+//		
+//	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 			
 /*----------点击商品数量加减事件-------------*/
 	var i = 0;	
-	var $quantity1;
+	var $quantity=$("#quantity");
 	var $i2 = $(".i2");
 	var $i0 = $(".i0");
 		$i2.on("click",function(){
 			i++;
-		$quantity1=$quantity.html(i);
-		console.log(parseInt($quantity1))
+		$quantity.html(i);
+		
 			
 		})
 		$i0.on("click",function(){
@@ -30,7 +66,7 @@ jQuery(function(){
 				if (i==0) {
 				i=0;
 				}
-			$quantity1=$quantity.html(i);
+			$quantity.html(i);
 			}
 		})
 			
@@ -47,7 +83,7 @@ jQuery(function(){
 	var $quantity=$("#quantity");	//数量	
 	var	$img=$(".box1");			//图片
 	var $bt2 = $(".bt2");			//添加购物车按钮
-	//var $quantity1 = parseInt($("#quantity").html());//获取商品数量的初始值
+	var $quantity1 = parseInt($("#quantity").html());//获取商品数量的初始值
 	
 	$bt2.on("click",function(){
 			$quantity1++;
@@ -74,7 +110,7 @@ jQuery(function(){
 	/*-------商品尺码鼠标点击切换事件---------*/
 	 var $tix_ul =$(".tix_ul");
 	 $tix_ul.on("click","li",function(){
-	 	$(this).css({"border":"1px solid #E50065","color":"#E50065"}).siblings("li").css({"border":"1px solid #6A6A6A","color":"#6A6A6A"});
+	 	$(this).css({"border":"2px solid #E50065","color":"#E50065"}).siblings("li").css({"border":"2px solid #6A6A6A","color":"#6A6A6A"});
 	 })
 		
 
