@@ -100,22 +100,7 @@
     cursor: pointer;
     display: inline-block;
 }
-/*.img img{
-	
-    display: none;
-    
-}
-.img span{
-	width: 160px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 44px;
-}*/
+
 .select_bd1 dt{
 	width: 108px;
     height: 10px;

@@ -163,7 +163,7 @@ jQuery(function(){
 			
 			//判断是否通过
 			if (falg2 && falg3 && falg4 &&falg5 &&falg1) {
-				window.location="../index.html";
+				window.location="login.html";
 				alert("注册成功");
 			}else{
 				

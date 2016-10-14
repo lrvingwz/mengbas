@@ -1,16 +1,20 @@
 @charset "utf-8";
-body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,img,legend,button,input,textarea,th,td {
+/*body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,img,legend,button,input,textarea,th,td {
 	margin:0;
 	padding:0;
+}*/
+*{
+	margin: 0;
+	padding: 0;
 }
-
-html,body{height: 100%; width: 1332px;}
+html,body{height: 100%;}
 body {
 	color:#555;
 	font-size:12px;
 	font-family:"宋体";
 	line-height:22px;
-	background:#FFFFFF;
+	background::;;
+	
 }
 .clear {
 	clear:both;
