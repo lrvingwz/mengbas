@@ -23,11 +23,7 @@ jQuery(function(){
 		$positul.eq(minli-1).css("display","block").siblings().css("display","none")
 })
 	
-//	$positul.on("mouseenter",function(){
-//		
-//		
-//	})
-	
+
 	
 	
 	
