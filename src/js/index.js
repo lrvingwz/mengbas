@@ -94,10 +94,33 @@ jQuery(function(){
 			});
 			
 		})
+	/*--------------右侧竖直导航栏---------------------------*/
+	var rUl = $(".rUl");
+	var $dis = $(".dis");
+	rUl.on("mouseenter","li",function(){
+		$(this).find("div").first().css("background","#C10055");
+		$(this).find("div").last().css("display","block");
+		$(this).find("img").first().css("opacity",1);
+	}).on("mouseleave","li",function(){
+		$dis.css("opacity",0);
+		$(this).find("div").first().css("background","#000000");
+		$(this).find("div").last().css("display","none");
+	})
+	/*--------TOP返回顶部--------------*/
+	window.onscroll=function(){
+		var $mytop = $("#mytop"); //返回顶部标签	
+		$mytop.on("click",function(){
+			
+			 document.documentElement.scrollTop=0;
+			 document.body.scrollTop=0;
+		}).on("mouseenter",function(){
+			$mytop.css("background","#C10055")
+		}).on("mouseleave",function(){
+			$mytop.css("background","#000000")
+		})
 	
-	
-	
-	
+	}
+
 	
 	/*---------------鼠标移动事件--------------------*/
 		var $brands_btn = $(".brands_btn");

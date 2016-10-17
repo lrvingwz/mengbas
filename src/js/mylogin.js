@@ -10,7 +10,9 @@ jQuery(function(){
 	
 	//我的购物车
 	var cook = getCookie("mytrade");
+		
 		cook = JSON.parse(cook);
+		console.log(cook)
 	var countcook = getCookie("count");  //从cookie中获取商品数量
 		countcook = JSON.parse(countcook);
 		countcook = parseInt(countcook);
@@ -23,7 +25,7 @@ jQuery(function(){
 	var trades;  //商品信息
 	var quantitys;  //数量
 	$.each(cook, function(idx,ele){      //遍历cookie
-		
+		console.log(ele)
 		$img1= ele.img;  //图片
 		trades = ele.trade //信息
 		prices = ele.price;  //单价

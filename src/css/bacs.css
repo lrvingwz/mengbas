@@ -3,12 +3,16 @@
 /*头部上，一*/
 .Moonbasa_header{margin: 0 auto; width: 1332px; position: relative;}
 .Moonbasa_page{width: 1332px;height: 26px; background: #F6F6F6;border-bottom: 1px solid #EDEDED;}
-.Moonbasa_box{width: 1200px; margin: 0 auto;}
-.Moonbasa_boxleft{width: 301px;  float: left;}
+.Moonbasa_box{width: 1200px; margin: 0 auto; }
+.Moonbasa_boxleft{ float: left; }
 .Moonbasa_boxleft_span{text-indent: 18px; display: inline-block;}
-.Moonbasa_boxright{width: auto;height: 26px; position: relative; float: right; padding-right:0 ;}
-.Moonbasa_boxright ul li{float: left;width: 60px;text-align: center;}
-.Moonbasa_boxright ul li a{padding-right: 9px;}
+.Moonbasa_boxright{width: 500px;height: 26px; position: relative; float: right; }
+.Moonbasa_boxright_ul{padding-left: 40px; width: 500px; overflow:hidden;height: 26px; position: relative;  }
+.Moonbasa_boxright_ul li{float: left; width: 65px; }
+.Moonbasa_boxright_ul li a{float: left;padding-right: 12px;}
+#felt_li{overflow: hidden; padding-right:0 ;}
+#felt_li img{float: right;}
+
 /*头部上，二*/
 .Moonbasa_header_img{width: 1332px;}
 .Moonbasa_header_imgdiv{width:1200px;overflow: hidden; margin: 0 auto;}
